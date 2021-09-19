@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+     <!-- font awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <header>
+
+        <h1 class="text-5xl text-center mt-12">LET'S GET SOME <span class="text-purple-600 font-semibold">DOLLAR!!</span></h1>
+    </header>
+
+    <main class="w-3/4 mx-auto">
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white text-center">
+                <div class="bg-pink-400 rounded py-8 shadow-lg">
+                    <h4 id="deposit-text" class="text-2xl">Deposit</h4>
+                    <h5 class="text-4xl">$<span id="deposit-total" >000</span></h5>
+                </div>
+                <div class="bg-purple-500 rounded py-8 shadow-lg">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-4xl">$<span id="withdraw-total">000</span></h2>
+                </div>
+                <div class="bg-yellow-400 rounded py-8 shadow-lg">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-4xl">$<span id="balance-total">2070</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- deposit and withdraw -->
+        <section>
+            <div class="grid grid-cols-2 mt-16 text-center gap-4">
+                <div>
+                    <div class="text-center bg-green-100 py-8 rounded shadow-lg">
+                        <h3 class="text-2xl mb-4">Please Deposite </h3>
+                        <input id="deposit-input" class="shadow border border-transparent py-2 px-4 rounded block mx-auto mb-4 w-3/4 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="number" placeholder="Deposti your $">
+                        
+                        <button id="deposit-button" class="bg-purple-600 w-3/4 mt-4 p-2 rounded text-xl font-semibold text-green-50 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">Deposite</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-center bg-pink-100 py-8 rounded shadow-lg">
+                        <h3 class="text-2xl mb-4">Please withdraw</h3>
+                        <input id="withdraw-input" class="shadow border border-transparent py-2 px-4 rounded block mx-auto mb-4 w-3/4 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="number" placeholder="$ Withdraw ">
+                        
+                        <button id="withdraw-button" class="bg-purple-600 w-3/4 mt-4 p-2 rounded text-xl font-semibold text-green-50 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">Withdraw</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
